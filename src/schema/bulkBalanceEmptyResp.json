@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "balances": {
+          "type": "array",
+          "items": {}
+        }
+      },
+      "required": ["balances"]
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string"
+        }
+      },
+      "required": ["self"]
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "totalPages": {
+          "type": "number"
+        },
+        "totalRecords": {
+          "type": "number"
+        }
+      },
+      "required": ["totalPages", "totalRecords"]
+    }
+  },
+  "required": ["data", "links", "meta"]
+}

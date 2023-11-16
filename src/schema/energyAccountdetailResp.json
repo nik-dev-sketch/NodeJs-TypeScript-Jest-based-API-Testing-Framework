@@ -1,0 +1,476 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "customerUType": {
+          "type": "string"
+        },
+        "person": {
+          "type": "object",
+          "properties": {
+            "lastUpdateTime": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "middleNames": {
+              "type": "array",
+              "items": {}
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "suffix": {
+              "type": "string"
+            },
+            "occupationCode": {
+              "type": "string"
+            },
+            "occupationCodeVersion": {
+              "type": "string"
+            },
+            "phoneNumbers": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "isPreferred": {
+                    "type": "string"
+                  },
+                  "purpose": {
+                    "type": "string"
+                  },
+                  "countryCode": {
+                    "type": "string"
+                  },
+                  "areaCode": {
+                    "type": "string"
+                  },
+                  "fullNumber": {
+                    "type": "string"
+                  },
+                  "number": {
+                    "type": "string"
+                  },
+                  "extension": {
+                    "type": "string"
+                  }
+                },
+                "required": ["purpose", "areaCode", "fullNumber", "number"]
+              }
+            },
+            "physicalAddresses": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "addressUType": {
+                    "type": "string"
+                  },
+                  "simple": {
+                    "type": "object",
+                    "properties": {
+                      "addressLine1": {
+                        "type": "string"
+                      },
+                      "addressLine2": {
+                        "type": "string"
+                      },
+                      "addressLine3": {
+                        "type": "string"
+                      },
+                      "city": {
+                        "type": "string"
+                      },
+                      "country": {
+                        "type": "string"
+                      },
+                      "state": {
+                        "type": "string"
+                      },
+                      "postcode": {
+                        "type": "string"
+                      },
+                      "mailingName": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "addressLine1",
+                      "addressLine2",
+                      "addressLine3",
+                      "city",
+                      "country",
+                      "state",
+                      "postcode",
+                      "mailingName"
+                    ]
+                  },
+                  "paf": {
+                    "type": "object",
+                    "properties": {
+                      "dpid": {
+                        "type": "string"
+                      },
+                      "thoroughfareNumber1": {
+                        "type": "string"
+                      },
+                      "thoroughfareNumber1Suffix": {
+                        "type": "string"
+                      },
+                      "thoroughfareNumber2": {
+                        "type": "string"
+                      },
+                      "thoroughfareNumber2Suffix": {
+                        "type": "string"
+                      },
+                      "flatUnitType": {
+                        "type": "string"
+                      },
+                      "flatUnitNumber": {
+                        "type": "string"
+                      },
+                      "floorLevelType": {
+                        "type": "string"
+                      },
+                      "floorLevelNumber": {
+                        "type": "string"
+                      },
+                      "lotNumber": {
+                        "type": "string"
+                      },
+                      "buildingName1": {
+                        "type": "string"
+                      },
+                      "buildingName2": {
+                        "type": "string"
+                      },
+                      "streetName": {
+                        "type": "string"
+                      },
+                      "streetType": {
+                        "type": "string"
+                      },
+                      "streetSuffix": {
+                        "type": "string"
+                      },
+                      "postalDeliveryType": {
+                        "type": "string"
+                      },
+                      "postalDeliveryNumber": {
+                        "type": "string"
+                      },
+                      "postalDeliveryNumberPrefix": {
+                        "type": "string"
+                      },
+                      "postalDeliveryNumberSuffix": {
+                        "type": "string"
+                      },
+                      "localityName": {
+                        "type": "string"
+                      },
+                      "postcode": {
+                        "type": "string"
+                      },
+                      "state": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "dpid",
+                      "thoroughfareNumber1",
+                      "thoroughfareNumber1Suffix",
+                      "thoroughfareNumber2",
+                      "thoroughfareNumber2Suffix",
+                      "flatUnitType",
+                      "flatUnitNumber",
+                      "floorLevelType",
+                      "floorLevelNumber",
+                      "lotNumber",
+                      "buildingName1",
+                      "buildingName2",
+                      "streetName",
+                      "streetType",
+                      "streetSuffix",
+                      "postalDeliveryType",
+                      "postalDeliveryNumber",
+                      "postalDeliveryNumberPrefix",
+                      "postalDeliveryNumberSuffix",
+                      "localityName",
+                      "postcode",
+                      "state"
+                    ]
+                  },
+                  "purpose": {
+                    "type": "string"
+                  }
+                },
+                "required": ["addressUType", "simple", "purpose"]
+              }
+            },
+            "emailAddresses": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "isPreferred": {
+                    "type": "string"
+                  },
+                  "address": {
+                    "type": "string"
+                  },
+                  "purpose": {
+                    "type": "string"
+                  }
+                },
+                "required": ["address", "purpose"]
+              }
+            }
+          },
+          "required": ["firstName", "lastName", "middleNames", "phoneNumbers", "physicalAddresses", "emailAddresses"]
+        },
+        "organisation": {
+          "type": "object",
+          "properties": {
+            "lastUpdateTime": {
+              "type": "string"
+            },
+            "agentFirstName": {
+              "type": "string"
+            },
+            "agentLastName": {
+              "type": "string"
+            },
+            "agentRole": {
+              "type": "string"
+            },
+            "businessName": {
+              "type": "string"
+            },
+            "legalName": {
+              "type": "string"
+            },
+            "shortName": {
+              "type": "string"
+            },
+            "abn": {
+              "type": "string"
+            },
+            "acn": {
+              "type": "string"
+            },
+            "isACNCRegistered": {
+              "type": "string"
+            },
+            "industryCode": {
+              "type": "string"
+            },
+            "industryCodeVersion": {
+              "type": "string"
+            },
+            "organisationType": {
+              "type": "string"
+            },
+            "registeredCountry": {
+              "type": "string"
+            },
+            "establishmentDate": {
+              "type": "string"
+            },
+            "physicalAddresses": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "addressUType": {
+                    "type": "string"
+                  },
+                  "simple": {
+                    "type": "object",
+                    "properties": {
+                      "mailingName": {
+                        "type": "string"
+                      },
+                      "addressLine1": {
+                        "type": "string"
+                      },
+                      "addressLine2": {
+                        "type": "string"
+                      },
+                      "addressLine3": {
+                        "type": "string"
+                      },
+                      "postcode": {
+                        "type": "string"
+                      },
+                      "city": {
+                        "type": "string"
+                      },
+                      "state": {
+                        "type": "string"
+                      },
+                      "country": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "mailingName",
+                      "addressLine1",
+                      "addressLine2",
+                      "addressLine3",
+                      "postcode",
+                      "city",
+                      "state",
+                      "country"
+                    ]
+                  },
+                  "paf": {
+                    "type": "object",
+                    "properties": {
+                      "dpid": {
+                        "type": "string"
+                      },
+                      "thoroughfareNumber1": {
+                        "type": "string"
+                      },
+                      "thoroughfareNumber1Suffix": {
+                        "type": "string"
+                      },
+                      "thoroughfareNumber2": {
+                        "type": "string"
+                      },
+                      "thoroughfareNumber2Suffix": {
+                        "type": "string"
+                      },
+                      "flatUnitType": {
+                        "type": "string"
+                      },
+                      "flatUnitNumber": {
+                        "type": "string"
+                      },
+                      "floorLevelType": {
+                        "type": "string"
+                      },
+                      "floorLevelNumber": {
+                        "type": "string"
+                      },
+                      "lotNumber": {
+                        "type": "string"
+                      },
+                      "buildingName1": {
+                        "type": "string"
+                      },
+                      "buildingName2": {
+                        "type": "string"
+                      },
+                      "streetName": {
+                        "type": "string"
+                      },
+                      "streetType": {
+                        "type": "string"
+                      },
+                      "streetSuffix": {
+                        "type": "string"
+                      },
+                      "postalDeliveryType": {
+                        "type": "string"
+                      },
+                      "postalDeliveryNumber": {
+                        "type": "string"
+                      },
+                      "postalDeliveryNumberPrefix": {
+                        "type": "string"
+                      },
+                      "postalDeliveryNumberSuffix": {
+                        "type": "string"
+                      },
+                      "localityName": {
+                        "type": "string"
+                      },
+                      "postcode": {
+                        "type": "string"
+                      },
+                      "state": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "dpid",
+                      "thoroughfareNumber1",
+                      "thoroughfareNumber1Suffix",
+                      "thoroughfareNumber2",
+                      "thoroughfareNumber2Suffix",
+                      "flatUnitType",
+                      "flatUnitNumber",
+                      "floorLevelType",
+                      "floorLevelNumber",
+                      "lotNumber",
+                      "buildingName1",
+                      "buildingName2",
+                      "streetName",
+                      "streetType",
+                      "streetSuffix",
+                      "postalDeliveryType",
+                      "postalDeliveryNumber",
+                      "postalDeliveryNumberPrefix",
+                      "postalDeliveryNumberSuffix",
+                      "localityName",
+                      "postcode",
+                      "state"
+                    ]
+                  },
+                  "purpose": {
+                    "type": "string"
+                  }
+                },
+                "required": ["addressUType", "purpose"]
+              }
+            }
+          },
+          "required": [
+            "lastUpdateTime",
+            "agentFirstName",
+            "agentLastName",
+            "agentRole",
+            "businessName",
+            "legalName",
+            "shortName",
+            "abn",
+            "acn",
+            "isACNCRegistered",
+            "industryCode",
+            "industryCodeVersion",
+            "organisationType",
+            "registeredCountry",
+            "establishmentDate",
+            "physicalAddresses"
+          ]
+        }
+      },
+      "required": ["customerUType", "person"]
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string"
+        }
+      },
+      "required": ["self"]
+    },
+    "meta": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  },
+  "required": ["data", "links", "meta"]
+}

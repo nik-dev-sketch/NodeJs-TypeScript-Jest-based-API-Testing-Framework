@@ -1,0 +1,51 @@
+{
+  "$id": "BB",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "balances": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "accountId": {
+                "type": "string"
+              },
+              "balance": {
+                "type": "string"
+              }
+            },
+            "required": ["accountId", "balance"]
+          }
+        }
+      },
+      "required": ["balances"]
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string"
+        }
+      },
+      "required": ["self"]
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "totalRecords": {
+          "type": "number"
+        },
+        "totalPages": {
+          "type": "number"
+        }
+      },
+      "required": ["totalRecords", "totalPages"]
+    }
+  },
+  "required": ["data", "links", "meta"]
+}

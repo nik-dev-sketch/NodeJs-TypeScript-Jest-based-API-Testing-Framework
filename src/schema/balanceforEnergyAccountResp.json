@@ -1,0 +1,32 @@
+{
+  "$id": "BEA",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "balance": {
+          "type": "string"
+        }
+      },
+      "required": ["balance"]
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string"
+        }
+      },
+      "required": ["self"]
+    },
+    "meta": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  },
+  "required": ["data", "links", "meta"]
+}

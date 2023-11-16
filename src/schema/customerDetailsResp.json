@@ -1,0 +1,176 @@
+{
+  "$id": "CUSTD",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "customerUType": {
+          "type": "string"
+        },
+        "person": {
+          "type": "object",
+          "properties": {
+            "lastUpdateTime": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "middleNames": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "suffix": {
+              "type": "string"
+            },
+            "occupationCode": {
+              "type": "string"
+            },
+            "occupationCodeVersion": {
+              "type": "string"
+            },
+            "phoneNumbers": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "isPreferred": {
+                    "type": "boolean"
+                  },
+                  "purpose": {
+                    "type": "string"
+                  },
+                  "countryCode": {
+                    "type": "string"
+                  },
+                  "areaCode": {
+                    "type": "string"
+                  },
+                  "number": {
+                    "type": "string"
+                  },
+                  "extension": {
+                    "type": "string"
+                  },
+                  "fullNumber": {
+                    "type": "string"
+                  }
+                },
+                "required": ["isPreferred", "purpose", "countryCode", "areaCode", "number", "extension", "fullNumber"]
+              }
+            },
+            "emailAddresses": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "isPreferred": {
+                    "type": "boolean"
+                  },
+                  "purpose": {
+                    "type": "string"
+                  },
+                  "address": {
+                    "type": "string"
+                  }
+                },
+                "required": ["isPreferred", "purpose", "address"]
+              }
+            },
+            "physicalAddresses": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "addressUType": {
+                    "type": "string"
+                  },
+                  "simple": {
+                    "type": "object",
+                    "properties": {
+                      "mailingName": {
+                        "type": "string"
+                      },
+                      "addressLine1": {
+                        "type": "string"
+                      },
+                      "addressLine2": {
+                        "type": "string"
+                      },
+                      "addressLine3": {
+                        "type": "string"
+                      },
+                      "postcode": {
+                        "type": "string"
+                      },
+                      "city": {
+                        "type": "string"
+                      },
+                      "state": {
+                        "type": "string"
+                      },
+                      "country": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "mailingName",
+                      "addressLine1",
+                      "addressLine2",
+                      "addressLine3",
+                      "postcode",
+                      "city",
+                      "state",
+                      "country"
+                    ]
+                  }
+                },
+                "required": ["addressUType", "simple"]
+              }
+            }
+          },
+          "required": [
+            "lastUpdateTime",
+            "firstName",
+            "lastName",
+            "middleNames",
+            "prefix",
+            "suffix",
+            "occupationCode",
+            "occupationCodeVersion",
+            "phoneNumbers",
+            "emailAddresses",
+            "physicalAddresses"
+          ]
+        }
+      },
+      "required": ["customerUType", "person"]
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string"
+        }
+      },
+      "required": ["self"]
+    },
+    "meta": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  },
+  "required": ["data", "links", "meta"]
+}

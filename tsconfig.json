@@ -1,0 +1,42 @@
+
+
+{
+  "extends": "@eadigital/tsconfig",
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    "module": "CommonJS",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "lib/**/*",
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "babel.config.js",
+    "coverage",
+    "cdktf.out",
+    "typings/browser.d.ts",
+    "typings/browser"
+  ]
+}
