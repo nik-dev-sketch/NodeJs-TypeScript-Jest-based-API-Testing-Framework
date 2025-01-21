@@ -32,7 +32,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/api-testing-framework.git
+https://github.com/nik-dev-sketch/NodeJs-TypeScript-Jest-based-API-Testing-Framework.git
 
 # Install dependencies
 npm install
