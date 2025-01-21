@@ -36,3 +36,22 @@ https://github.com/nik-dev-sketch/NodeJs-TypeScript-Jest-based-API-Testing-Frame
 
 # Install dependencies
 npm install
+
+├── src/
+│   ├── config/
+│   │   ├── environment.ts      # Environment configurations
+│   │   └── settings.ts         # Global settings
+│   ├── models/
+│   │   └── api/
+│   │       ├── request/        # Request payload models
+│   │       └── response/       # Response payload models
+│   ├── schemas/
+│   │   └── json/              # JSON Schema definitions
+│   ├── tests/
+│   │   ├── integration/       # Integration tests
+│   │   └── unit/             # Unit tests
+│   ├── utils/
+│   │   ├── apiClient.ts       # API client utilities
+│   │   └── schemaValidator.ts # Schema validation utilities
+│   └── types/                 # TypeScript type definitions
+└── jest.config.ts             # Jest configuration
